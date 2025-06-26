@@ -23,7 +23,7 @@ export default function DevicesPage() {
         <div className="flex flex-col items-center">
           <p>Latitude: {location.lat}</p>
           <p>Longitude: {location.lng}</p>
-          <div className="mt-4 w-full md:w-[1000px] h-[400px]">
+          <div className="mt-4 w-[500px] md:w-[1000px] h-[400px]">
             <iframe
               width="100%"
               height="100%"

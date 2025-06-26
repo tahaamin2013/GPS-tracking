@@ -17,13 +17,13 @@ export default function DevicesPage() {
   }, [])
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center p-4">
+    <div className="min-h-screen flex flex-col items-center justify-center">
       <h1 className="text-xl font-bold mb-4">📍 Mobile&apos;s Live Location</h1>
       {location ? (
         <div className="flex flex-col items-center">
           <p>Latitude: {location.lat}</p>
           <p>Longitude: {location.lng}</p>
-          <div className="mt-4 w-[500px] md:w-[1000px] h-[400px]">
+          <div className="mt-4 w-[700px] md:w-[1000px] h-[400px]">
             <iframe
               width="100%"
               height="100%"

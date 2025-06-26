@@ -17,12 +17,22 @@ export default function DevicesPage() {
   }, [])
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center">
-      <h1 className="text-xl font-bold">📍 Mobile&apos;s Live Location</h1>
+    <div className="min-h-screen flex flex-col items-center justify-center p-4">
+      <h1 className="text-xl font-bold mb-4">📍 Mobile&apos;s Live Location</h1>
       {location ? (
-        <div>
+        <div className="flex flex-col items-center">
           <p>Latitude: {location.lat}</p>
           <p>Longitude: {location.lng}</p>
+          <div className="mt-4 w-full max-w-[600px] h-[400px]">
+            <iframe
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              loading="lazy"
+              allowFullScreen
+              src={`https://www.google.com/maps?q=${location.lat},${location.lng}&z=15&output=embed`}
+            ></iframe>
+          </div>
         </div>
       ) : (
         <p>Loading...</p>

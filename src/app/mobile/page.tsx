@@ -42,7 +42,7 @@ export default function MobilePage() {
         <div className="text-center w-full max-w-xl">
           <p>Latitude: {location.lat}</p>
           <p>Longitude: {location.lng}</p>
-          <div className="mt-4 w-full h-[600px] border rounded shadow">
+          <div className="mt-4 w-full h-[800px] border rounded shadow">
             <iframe
               width="100%"
               height="100%"

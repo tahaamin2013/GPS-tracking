@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect, useState } from "react";
 
 export default function MobilePage() {
@@ -48,7 +49,7 @@ export default function MobilePage() {
               style={{ border: 0 }}
               loading="lazy"
               allowFullScreen
-              src={`https://www.google.com/maps?q=${location.lat},${location.lng}&z=15&output=embed`}
+              src={`https://www.google.com/maps?q=${location.lat},${location.lng}&z=17&t=p&output=embed`}
             ></iframe>
           </div>
         </div>
